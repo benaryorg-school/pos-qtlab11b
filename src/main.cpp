@@ -15,8 +15,20 @@ int main(int argc,char **argv)
 	app.installTranslator(&translator);
 
 	//create the window
-	Window win;
-	win.show();
+	Window *win;
+	try
+	{
+		win=new Window;
+	}
+	catch(QString err)
+	{
+		//display the error
+		QMessageBox::critical(0,QObject::tr("Error"),err+"\n"+
+			QObject::tr("Will now exit!"),QMessageBox::Close);
+		return 1;
+	}
+	//show the window
+	win->show();
 
 	//execute
 	return app.exec();
