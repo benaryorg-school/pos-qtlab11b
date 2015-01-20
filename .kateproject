@@ -5,5 +5,16 @@
 		{
 			"git":1
 		}
-	]
+	],
+	"build":
+	{
+        "targets":
+        [
+            {"name":"init", "build_cmd":"qmake"},
+            {"name":"build","build_cmd":"make -j5"},
+            {"name":"clean","build_cmd":"make -j5 clean"}
+        ],
+        "default_target":"build",
+        "clean_target":"clean"
+    }
 }
