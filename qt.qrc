@@ -1,5 +1,14 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource prefix="/">
-	<!--<file>data/dict.dic</file>-->
+	<file>data/bgld.png</file>
+	<file>data/kaernten.png</file>
+	<file>data/noe.png</file>
+	<file>data/ooe.png</file>
+	<file>data/sbg.png</file>
+	<file>data/steiermark.png</file>
+	<file>data/tirol.png</file>
+	<file>data/vorarlbg.png</file>
+	<file>data/wien.png</file>
+	<file>data/bundeslaender.csv</file>
 </qresource>
 </RCC>
