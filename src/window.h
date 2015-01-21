@@ -14,6 +14,10 @@ class Window:public QWidget
 public:
 	Window(QWidget *parent=0);
 	~Window(void);
+
+private:
+
+	QTableWidget *table;
 };
 
 #endif /** WINDOW_H **/
