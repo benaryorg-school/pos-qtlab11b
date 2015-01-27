@@ -14,6 +14,6 @@ QMAKE_CXXFLAGS += -std=c++11
 RESOURCES = qt.qrc
 
 # Input
-HEADERS += src/window.h
-SOURCES += src/main.cpp src/window.cpp
+HEADERS += src/window.h src/stateitem.h
+SOURCES += src/main.cpp src/window.cpp src/stateitem.cpp
 #TRANSLATIONS += lang/de.ts

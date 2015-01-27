@@ -7,16 +7,17 @@
 #endif
 #include <QtGui>
 
-class StateItem:public QItemDelegate
+class StateItem:public QWidget
 {
 	Q_OBJECT
 
 public:
-	StateItem(QWidget *parent=0);
+	StateItem(QString &line,QWidget *parent=0);
 	~StateItem(void);
 
-	void paint(QPainter *p,const QStyleOptionViewItem &opt,
-		const QModelIndex &index) const;
+private:
+	QStringList list;
+	QLayout *layout;
 };
 
 #endif /** STATEITEM_H **/

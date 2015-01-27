@@ -16,8 +16,8 @@ public:
 	~Window(void);
 
 private:
-
-	QTableWidget *table;
+	QLayout *layout;
+	QListWidget *list;
 };
 
 #endif /** WINDOW_H **/
