@@ -15,6 +15,21 @@ public:
 	StateItem(QString &line,QWidget *parent=0);
 	~StateItem(void);
 
+	enum CSVIndex
+	{
+		icon,
+		state,
+		capital,
+		residents,
+		area,
+		president,
+		seats,
+		maxseats,
+	};
+	
+protected:
+	void mousePressEvent(QMouseEvent *event);
+
 private:
 	QStringList list;
 	QLayout *layout;
